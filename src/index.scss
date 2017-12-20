@@ -1,0 +1,424 @@
+@import './_shared.scss';
+@import './_fonts.scss';
+
+body.ReactModal__Body--open{
+  overflow: hidden;
+}
+body {
+  font-size: 15px;
+}
+
+#root {
+  min-height: 600px;
+  // Only global style will be added here
+  // For module/feature specific please add css file in respscitive folder
+  /* columns of same height styles */
+  .Input-Gruop {
+    display: table;
+    .Input-Gruop-Child {
+      display: table-cell;
+      vertical-align: top;
+      .input-group-addon {
+        height: 34px;
+        border-left: 1px solid #ccc;
+        border-right: 0;
+      }
+      input {
+        border-radius: 0;
+      }
+      &:nth-child(2) {
+        width: 100%;
+      }
+    }
+  }
+  .row-full-height {
+    height: 100%;
+  }
+  .col-full-height {
+    height: 100%;
+    vertical-align: middle;
+  }
+  .row-same-height {
+    display: table;
+    width: 100%;
+    /* fix overflow */
+    table-layout: fixed;
+    margin: 0;
+  }
+  .col-xs-height {
+    display: table-cell;
+    // float: none !important;
+  }
+
+  @media (min-width: 768px) {
+    .col-sm-height {
+      display: table-cell;
+      // float: none !important;
+    }
+  }
+  @media (min-width: 992px) {
+    .col-md-height {
+      display: table-cell;
+      float: none !important;
+    }
+  }
+  @media (min-width: 1200px) {
+    .col-lg-height {
+      display: table-cell;
+      float: none !important;
+    }
+  }
+
+  /* vertical alignment styles */
+
+  .col-top {
+    vertical-align: top;
+  }
+  .col-middle {
+    vertical-align: middle;
+  }
+  .col-bottom {
+    vertical-align: bottom;
+  }
+
+
+  .border-right-1px {
+    border-right: solid 1px;
+  }
+
+  .border-left-1px {
+    border-left: solid 1px;
+  }
+
+  .padding-0 {
+  	padding: 0;
+  }
+
+  .padding-lr-0 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .padding-l-0 {
+    padding-left: 0;
+  }
+  .padding-r-0 {
+    padding-right: 0;
+  }
+
+  .margin-lr-0 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .margin-l-15px {
+    margin-left: 15px;
+  }
+  .margin-r-15px {
+    margin-right: 15px;
+  }
+  .margin-lr-15px {
+    margin-right: 15px;
+  	margin-left: 15px;
+  }
+
+  .text-uppercase {
+    text-transform: uppercase;
+  }
+
+  a {
+    cursor: pointer;
+  }
+
+  button:focus,
+  a:focus {
+  	outline: none;
+  }
+
+  select {
+    width: auto;
+  }
+
+  .btn:focus,
+  .btn:active:focus,
+  .btn.active:focus,
+  .btn.focus,
+  .btn:active.focus,
+  .btn.active.focus {
+  	outline: none;
+  }
+
+  .btn,
+  .btn-b {
+    box-shadow: none;
+  	border-radius: 0;
+  }
+
+  .btn-inverse {
+  	background: transparent;
+    border: 2px solid $border-color;
+    border-color: $border-color;
+    text-shadow: none;
+    box-shadow: none;
+    &:hover,
+    &:focus,
+    &.active,
+    &:active {
+      background-color: #e0e0e0;
+      background-position: 0 -15px;
+      color: #333;
+    }
+  }
+
+
+  .btn-transparent {
+  	background: transparent;
+    padding: 10px 20px;
+    &:hover,
+    &:active,
+    &.active,
+    &:focus {
+    	background: #efefef;
+    	box-shadow: none;
+    }
+  }
+
+
+  .styled-select {
+    border: 1px solid #ccc;
+    display: inline-block;
+    background: transparent;
+  }
+
+  .styled-select > select {
+    height: 32px;
+    border: none;
+    border-radius: 0;
+    line-height: 1;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .styled-select > select:focus {
+    outline: none;
+  }
+
+  .App {
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+  .logo img {
+    max-width: 350px;
+  }
+
+  .logo > a {
+    font-family: $font-BodoniMT;
+    text-decoration: none;
+    color: $primary-color;
+  }
+  .logo > a:focus,
+  .logo > a:hover {
+    color: $primary-color;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: $font-stack;
+  }
+  header {
+  	margin-bottom: 25px;
+  }
+
+  header h1{
+  	text-transform: uppercase;
+  	font-weight: normal;
+  	font-size: 40px;
+  }
+
+  .menu-item-container {
+    //position: relative;
+    display: inline-block;
+    //z-index: 1;
+    text-align: center;
+    min-height: 60px;
+    font-weight: bold;
+    .menu-dropdown {
+      position: absolute;
+      left: auto;
+      background: white;
+      border: solid 1px;
+      width: 400px;
+      min-height: 100px;
+      padding: 20px 0;
+      a {
+        color: black;
+        font-size: 14px;
+        display: inline-block;
+        padding-bottom: 20px;
+        min-height: 40px;
+        font-weight: normal;
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-family: 'AdelleSans';
+        &:hover {
+          text-decoration: none;
+        }
+      }
+      .list-title {
+        font-weight: bold !important;
+        border-bottom: solid 1px #ccc;
+        position: relative;
+        width: 150px;
+      }
+      .text-left:not(:first-child) .list-title {
+        border: 0;
+      }
+     /* .text-left {
+        div:first-child {
+          margin-top: 50px;
+        }
+      } */
+    }
+
+    .column-size-1 {
+      width: 190px;
+    }
+
+    .column-size-4 {
+      width: 570px;
+    }
+
+    .column-size-3 {
+      width: 440px;
+    }
+
+    &:not(.active) .menu-dropdown {
+      display: none;
+    }
+    .menu-link {
+      display: inline-block;
+      padding: 10px 20px;
+      cursor: pointer;
+      position: relative;
+      top: 1px;
+      z-index: 1;
+      border: solid 1px transparent;
+      color: #555;
+      font-size: 13px;
+      text-transform: uppercase;
+      font-family: $font-AdelleSans-bold;
+      &:hover, &:focus {
+        text-decoration: none;
+      }
+    }
+
+    &.active .menu-link {
+      background: white;
+      border: solid 1px black;
+      border-bottom: 0;
+    }
+  }
+  // Buttons
+
+  .custom-btn {
+    margin: auto;
+    padding: 10px 20px;
+    text-align: center;
+    margin-bottom: 5px;
+    text-shadow: none;
+    font-weight: 600;
+    cursor: pointer;
+    border: 0;
+    display: inline-block;
+    background: white;
+    font-family: $font-AdelleSans-thin;
+    &:hover {
+      background: $color-light-blue;
+      color: white;
+    }
+  }
+
+  .btn-green {
+    @extend .custom-btn;
+    background: $color-green;
+    color: white;
+
+    &:hover,
+    &:focus {
+      background: $color-dark-green;
+      color: white;
+    }
+  }
+
+  .btn-white {
+    @extend .custom-btn;
+    border: solid 1px $color-green;
+    color: $color-green;
+
+    &:hover,
+    &:focus {
+      background: #fff;
+      color: $color-dark-green;
+    }
+  }
+
+  .react-modal-footer {
+    .close-modal-btn{
+      &:hover {
+       background: #efefef;
+       padding: 10px 20px;
+       display: inline-block;
+      }
+    }
+  }
+
+  .cta-btn {
+    transition: all 0.5s;
+    padding: 10px;
+    cursor: pointer;
+    color: black;
+    text-transform: uppercase;
+    font-size: 13px;
+    a {
+      color: black;
+      padding-left: 0;
+      padding: 10px 10px 10px 0;
+      &:hover,
+      &:focus {
+        text-decoration: none;
+      }
+    }
+    &:hover {
+    // transition: all 0.2s;
+    // padding-left: 25px;
+      text-decoration: none;
+    }
+  }
+  .form-error {
+    color: #ec5840;
+  }
+
+  .is-invalid-input {
+    background-color: rgba(236, 88, 64, 0.1);
+    border-color: #ec5840;
+  }
+
+  // Fix `easyzoom` plugin was not shwoing zoom image inside OPT
+  img {
+    width: auto;
+    max-width: inherit;
+  }
+
+  .tooltip-icon {
+    font-size: 17px;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 10px;
+  }
+
+  .panel-body {
+    .tooltip-icon {
+      float: right;
+    }
+  }
+}

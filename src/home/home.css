@@ -1,0 +1,108 @@
+#root #home .img-responsive {
+  height: auto; }
+
+#root #home .slick-slider .slick-slide {
+  padding: 0 25px !important; }
+
+#root #home .slick-slider .arrowNext, #root #home .slick-slider .arrowPrev {
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-size: 30px; }
+
+#root #home .slick-slider .arrowNext {
+  right: -25px; }
+  #root #home .slick-slider .arrowNext span:before {
+    font-size: 40px;
+    position: absolute;
+    top: 0;
+    color: #7c7c7c; }
+
+#root #home .slick-slider .arrowPrev {
+  left: -25px; }
+  #root #home .slick-slider .arrowPrev span:before {
+    font-size: 40px;
+    position: absolute;
+    top: 0;
+    color: #7c7c7c; }
+
+#root #home .slick-slider .slick-slide.slick-active {
+  padding: 0 25px; }
+
+#root #home .slick-slider .slick-dots {
+  padding-bottom: 20px; }
+
+#root #home .slick-slider .carousel-product {
+  text-align: center;
+  font-family: "AdelleSans-bold";
+  padding-top: 80px; }
+  #root #home .slick-slider .carousel-product .brand-name {
+    font-size: 30px;
+    text-transform: uppercase; }
+  #root #home .slick-slider .carousel-product .certificate {
+    font-size: 30px; }
+  #root #home .slick-slider .carousel-product .small {
+    font-size: 18px;
+    font-family: "AdelleSans-Thin";
+    font-style: italic;
+    font-weight: 200;
+    position: relative;
+    top: -3px;
+    right: 6px; }
+  #root #home .slick-slider .carousel-product .price {
+    font-size: 25px;
+    font-family: "AdelleSans-Thin"; }
+  #root #home .slick-slider .carousel-product .link {
+    font-size: 14px;
+    color: #5077af;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400; }
+
+#root #home .home-transition-appear {
+  opacity: 0.01; }
+
+#root #home .home-transition-appear.home-transition-appear-active {
+  opacity: 1;
+  transition: opacity .5s ease-in; }
+
+#root #home .menu-loader {
+  text-align: center; }
+
+#root #home .home-loader {
+  min-height: 500px;
+  text-align: center;
+  padding-top: 200px; }
+
+#root #home .callout {
+  border-bottom: 1px solid #000000;
+  padding: 5px 0;
+  margin-bottom: 5px;
+  min-height: 350px; }
+  #root #home .callout:not(:last-child) .grid-img {
+    border-right: 1px solid #000000; }
+  #root #home .callout .grid-img {
+    padding: 0 5px; }
+  #root #home .callout img {
+    height: fit-content;
+    box-shadow: none; }
+
+#root #home .column-60,
+#root #home .column-120 {
+  border-top: 1px solid #000000; }
+
+#root #home .column-40 {
+  border-bottom: 0; }
+
+#root .main-menu {
+  position: relative;
+  z-index: 1; }

@@ -1,0 +1,72 @@
+
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url($fontsDir + '/glyphicons-halflings/glyphicons-halflings-regular.eot');
+  src: url($fontsDir + '/glyphicons-halflings/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
+  url($fontsDir + '/glyphicons-halflings/glyphicons-halflings-regular.woff2') format('woff2'),
+  url($fontsDir + '/glyphicons-halflings/glyphicons-halflings-regular.woff') format('woff'),
+  url($fontsDir + '/glyphicons-halflings/glyphicons-halflings-regular.ttf') format('truetype'),
+  url($fontsDir + '/glyphicons-halflings/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+
+
+@font-face {
+  font-family: 'AdelleSans-Bold';
+  src:  url($fontsDir + '/adele_sans/adelle-sans-bold/AdelleSans-Bold.woff') format('woff'),
+  url($fontsDir + '/adele_sans/adelle-sans-bold/AdelleSans-Bold.ttf')  format('truetype'),
+  url($fontsDir + '/adele_sans/adelle-sans-bold/AdelleSans-Bold.svg#AdelleSans-Bold') format('svg'),
+  url($fontsDir + '/adele_sans/adelle-sans-bold/AdelleSans-Bold.eot') format('embedded-opentype');
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AdelleSans-SemiBold';
+  src:  url($fontsDir + '/adele_sans/adelle-sans-semibold/AdelleSans-Semibold.woff') format('woff'),
+  url($fontsDir + '/adele_sans/adelle-sans-bold/AdelleSans-Semibold.ttf')  format('truetype'),
+  url($fontsDir + '/adele_sans/adelle-sans-bold/AdelleSans-Semibold.svg#AdelleSans-Semibold') format('svg'),
+  url($fontsDir + '/adele_sans/adelle-sans-bold/AdelleSans-Semibold.eot') format('embedded-opentype');
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AdelleSans-Thin';
+  src:  url($fontsDir + '/adele_sans/adelle-sans-thin/AdelleSans-Thin.woff') format('woff'),
+  url($fontsDir + '/adele_sans/adelle-sans-thin/AdelleSans-Thin.ttf')  format('truetype'),
+  url($fontsDir + '/adele_sans/adelle-sans-thin/AdelleSans-Thin.svg#AdelleSans-Thin') format('svg'),
+  url($fontsDir + '/adele_sans/adelle-sans-thin/AdelleSans-Thin.eot') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AdelleSans-ThinItalic';
+  src:  url($fontsDir + '/adele_sans/adelle-sans-thin-italic/AdelleSans-ThinItalic.woff') format('woff'),
+  url($fontsDir + '/adele_sans/adelle-sans-thin-italic/AdelleSans-ThinItalic.ttf')  format('truetype'),
+  url($fontsDir + '/adele_sans/adelle-sans-thin-italic/AdelleSans-ThinItalic.svg#AdelleSans-ThinItalic') format('svg'),
+  url($fontsDir + '/adele_sans/adelle-sans-thin-italic/AdelleSans-ThinItalic.eot') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BaskervilleBE-Regular';
+  src: url($fontsDir + '/Berthold Baskerville/BaskervilleBE-Regular.eot?#iefix') format('embedded-opentype'),
+  url($fontsDir + '/Berthold Baskerville/BaskervilleBE-Regular.woff') format('woff'), url($fontsDir + '/Berthold Baskerville/BaskervilleBE-Regular.ttf')  format('truetype'),
+  url($fontsDir + '/Berthold Baskerville/BaskervilleBE-Regular.svg#BaskervilleBE-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BodoniMT';
+  src:  url($fontsDir + '/bodoni-mt-1361532932/BodoniMT.woff') format('woff'),
+  url($fontsDir + '/bodoni-mt-1361532932/BodoniMT.ttf')  format('truetype'),
+  url($fontsDir + '/bodoni-mt-1361532932/BodoniMT.svg#BodoniMT') format('svg'),
+  url($fontsDir + '/bodoni-mt-1361532932/BodoniMT.eot') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
